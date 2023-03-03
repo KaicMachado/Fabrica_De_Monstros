@@ -1,0 +1,189 @@
+* {
+ margin: 0px;
+ padding: 0px;
+ font-family: "Montserrat";
+ color: #fff;
+}
+
+body {
+ background-color: #000;
+}
+
+.header {
+ width: 85%;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ align-items: center;
+ margin: 0 auto;
+ padding-top: 20px;
+}
+
+.header-right img {
+ width: 700px;
+ align-self: left;
+}
+
+.header-left {
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+}
+
+.header-left a:hover {
+ color: #000;
+}
+
+.header-left img {
+ width: 205px;
+}
+
+.header-left h1 {
+ font-size: 2.5rem;
+}
+
+.header-left span,
+.sobre span {
+ color: #e2181a;
+}
+
+.header-left a {
+ text-decoration: none;
+ padding: 10px 30px;
+ background-color: #e2181a;
+ max-width: max-content;
+ margin: 0 auto;
+ border-radius: 4px;
+}
+
+@media (max-width: 1050px) {
+ .header {
+  grid-template-columns: 1fr;
+ }
+ .header-left img {
+  margin: 0 auto;
+ }
+ .header-right img {
+  display: none;
+ }
+ .header-left a {
+  margin-bottom: 20px;
+ }
+}
+
+/* Feito para Você */
+
+.div-mid {
+ margin: 0 auto;
+ border-bottom: 2px solid #e2181a;
+ border-top: 2px solid #e2181a;
+}
+
+.div-mid h1 {
+ text-align: center;
+ padding-top: 60px;
+}
+
+.cards {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ padding-top: 80px;
+ padding-bottom: 80px;
+ justify-content: space-evenly;
+}
+
+.card-item {
+ width: 220px;
+ height: 135px;
+ display: flex;
+ flex-direction: column;
+ gap: 12px;
+ align-items: center;
+ text-align: center;
+}
+
+.card-item img {
+ width: 80px;
+}
+
+/* Sobre */
+.sobre {
+ height: 1000px;
+}
+.sobre h1 {
+ padding-top: 80px;
+ padding-bottom: 60px;
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 2rem;
+}
+
+.lista-card {
+ display: flex;
+ gap: 20px;
+ flex-wrap: wrap;
+}
+
+.card {
+ width: 300px;
+ height: 350px;
+ background-image: url(img/img-lista-1.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ display: flex;
+ align-items: end;
+ text-align: center;
+ margin: 0 auto;
+ border: 1px solid #e2181a;
+ border-radius: 4px;
+}
+
+.card-txt {
+ flex-direction: column;
+}
+
+.card-txt p {
+ font-weight: 700;
+ text-transform: uppercase;
+ padding: 10px;
+ background-color: #e2181a;
+ margin-top: 10px;
+}
+
+.card-txt h2 {
+ margin: 10px;
+}
+
+.sobre a {
+ text-transform: uppercase;
+ text-decoration: none;
+ padding: 15px 90px;
+ background-color: #e2181a;
+ border-radius: 4px;
+ margin: 0 auto;
+ margin-top: 50px;
+ display: block;
+ max-width: max-content;
+}
+
+.sobre a::after {
+ content: "";
+ width: 0%;
+ height: 2px;
+ background: #fff;
+ display: block;
+ transition: 0.4s;
+}
+
+.sobre a:hover::after {
+ width: 100%;
+ transition: 0.4s;
+}
+
+@media (max-width: 660px) {
+ .card {
+  width: 250px;
+  height: 350px;
+  border: 1px solid #e2181a;
+ }
+}
