@@ -52,6 +52,7 @@ body {
  background-color: #e2181a;
  max-width: max-content;
  margin: 0 auto;
+ margin-bottom: 5px;
  border-radius: 4px;
 }
 
@@ -185,5 +186,12 @@ body {
   width: 250px;
   height: 350px;
   border: 1px solid #e2181a;
+ }
+}
+
+@media (max-width: 450px) {
+ .sobre a {
+  padding: 15px 15px;
+  font-size: 0.975rem;
  }
 }
