@@ -54,6 +54,7 @@ body {
  margin: 0 auto;
  margin-bottom: 5px;
  border-radius: 4px;
+ flex-wrap: nowrap;
 }
 
 @media (max-width: 1050px) {
