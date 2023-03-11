@@ -299,14 +299,21 @@ body {
 @media (max-width: 450px) {
  .investimento-txt {
   width: fit-content;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+ }
+ .txt-top {
+  padding: 15px 20px;
  }
  .investimento-txt a {
   font-size: 0.75rem;
   padding: 10px 25px;
+  margin: 20px auto;
  }
  .investimento-txt-bottom span {
   display: block;
+ }
+ .investimento-container {
+  margin-top: 30px;
  }
 }
 
