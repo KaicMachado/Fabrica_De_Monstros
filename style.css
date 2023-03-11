@@ -52,7 +52,7 @@ body {
  background-color: #e2181a;
  max-width: max-content;
  margin: 0 auto;
- margin-bottom: 5px;
+ margin-bottom: 10px;
  border-radius: 4px;
  flex-wrap: nowrap;
 }
@@ -110,7 +110,7 @@ body {
 
 /* Sobre */
 .sobre {
- height: 1000px;
+ border-bottom: 2px solid #e2181a;
 }
 .sobre h1 {
  padding-top: 80px;
@@ -156,7 +156,8 @@ body {
  margin: 10px;
 }
 
-.sobre a {
+.sobre a,
+.txt-bottom-a {
  text-transform: uppercase;
  text-decoration: none;
  padding: 15px 90px;
@@ -164,6 +165,7 @@ body {
  border-radius: 4px;
  margin: 0 auto;
  margin-top: 50px;
+ margin-bottom: 50px;
  display: block;
  max-width: max-content;
 }
@@ -194,5 +196,112 @@ body {
  .sobre a {
   padding: 15px 15px;
   font-size: 0.975rem;
+ }
+}
+
+/* Investimento */
+
+.investimento {
+ height: max-content;
+ margin-bottom: 50px;
+}
+
+.investimento-container {
+ display: flex;
+ gap: 20px;
+ margin: 0 auto;
+ width: 60%;
+ margin-top: 50px;
+}
+
+.investimento-txt {
+ width: 60%;
+ border: 1px solid #e2181a;
+ border-radius: 4px;
+ text-align: center;
+ margin: 0 auto;
+}
+
+.txt-top {
+ padding: 20px 15px;
+}
+
+.txt-top h1 {
+ font-weight: 700;
+ text-transform: uppercase;
+ width: max-content;
+ margin: 0 auto;
+}
+
+.txt-top h1::after {
+ content: "";
+ width: 100%;
+ height: 2px;
+ background: #e2181a;
+ display: block;
+}
+
+.txt-top p {
+ padding: 20px 10px;
+}
+
+.txt-top span,
+.txt-bottom span {
+ color: #e2181a;
+}
+
+.txt-bottom-a {
+ padding: 15px 50px;
+}
+
+.investimento-garantia {
+ text-align: center;
+ width: 40%;
+ padding-top: 50px;
+}
+
+@media (max-width: 1000px) {
+ .investimento {
+  margin: 0 auto;
+ }
+ .investimento-container {
+  flex-direction: column;
+ }
+ .investimento-txt {
+  display: block;
+  width: 100%;
+ }
+ .investimento-garantia {
+  margin: 0 auto;
+  padding-top: 0;
+  align-items: center;
+ }
+}
+
+@media (max-width: 850px) {
+ .investimento-garantia {
+  display: none;
+ }
+}
+
+@media (max-width: 550px) {
+ .investimento-txt a {
+  font-size: 0.9rem;
+  padding: 15px 30px;
+ }
+ .investimento-txt p:nth-child(2) {
+  display: none;
+ }
+}
+@media (max-width: 450px) {
+ .investimento-txt {
+  width: fit-content;
+ }
+ .investimento-txt a {
+  font-size: 0.75rem;
+  padding: 10px 25px;
+ }
+ .investimento-txt-bottom span {
+  display: block;
  }
 }
