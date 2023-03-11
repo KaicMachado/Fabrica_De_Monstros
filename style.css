@@ -203,7 +203,7 @@ body {
 
 .investimento {
  height: max-content;
- margin-bottom: 50px;
+ margin-bottom: 100px;
 }
 
 .investimento-container {
@@ -275,6 +275,7 @@ body {
   margin: 0 auto;
   padding-top: 0;
   align-items: center;
+  margin-bottom: 50px;
  }
 }
 
@@ -282,8 +283,10 @@ body {
  .investimento-garantia {
   display: none;
  }
+ .investimento-txt {
+  margin-bottom: 50px;
+ }
 }
-
 @media (max-width: 550px) {
  .investimento-txt a {
   font-size: 0.9rem;
@@ -296,6 +299,7 @@ body {
 @media (max-width: 450px) {
  .investimento-txt {
   width: fit-content;
+  margin-bottom: 50px;
  }
  .investimento-txt a {
   font-size: 0.75rem;
@@ -304,4 +308,13 @@ body {
  .investimento-txt-bottom span {
   display: block;
  }
+}
+
+/* Footer */
+
+.footer {
+ margin: 0 auto;
+ background: #e2181a;
+ text-align: center;
+ padding: 10px;
 }
